@@ -1,0 +1,18 @@
+<section id="edit" class="bg-dark text-white text-center py-5">
+    <h1>{{title}}</h1>
+<form method="post" id="contact-form">
+    <fieldset>
+        <label for="vehicle">Vehicle Name:</label>
+        <input type="text" id="vehicle" name="vehicle" required value="{{vehicle.vehicle}}">
+    </fieldset>
+    <fieldset>
+        <label for="model">Model: </label>
+        <input type="text" id="model" name="model" required value="{{vehicle.model}}">
+    </fieldset>
+    <fieldset>  
+        <label for="price">Price: </label>
+        <input type="text" id="price" name="price" required value="{{vehicle.price}}">
+    </fieldset>
+       <input type="submit" value="Edt">
+</form>
+</section>

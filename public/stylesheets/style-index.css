@@ -1,0 +1,208 @@
+/* Reset default margin and padding for the body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero section styling */
+#hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('/images/bg-home.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Text color and alignment for hero heading and paragraph */
+#hero h1, #hero p {
+  color: white;
+  text-align: center;
+}
+
+/* Social icon style with hover effect */
+.social-icon {
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Teams section styling */
+#teams {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('/images/bg-teams.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Table styling */
+.table {
+  margin: 0 auto !important;
+  width: 80%;
+  max-width: 600px;
+}
+
+.table th,
+.table td {
+  color: white;
+}
+
+/* Team form and input styling */
+form {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+label, input, textarea {
+  display: block;
+  margin: 10px 0;
+  color: white;
+}
+
+#team, #captain, #manager {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Success message styling */
+#success-message {
+  color: white;
+  display: none;
+  background-color: green;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Contact section styling */
+#contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('/images/bg-add.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Trash and pencil icon styling for team deletion and editing */
+a[href^="/teams/delete/"] i.fas.fa-trash {
+  color: red;
+}
+
+a[href^="/teams/edit/"] i.fas.fa-pencil-alt {
+  color: blue;
+}
+
+/* Edit section styling */
+#edit {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('/images/edit.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login section styling */
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('/images/bg-login.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login hr {
+  color: white;
+}
+
+.login input {
+  width: 100%;
+  margin-bottom: 10px;
+  color: black;
+}
+
+/* Register section styling */
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('/images/bg-register.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register h1 {
+  color: white;
+}
+
+.register hr {
+  color: white;
+}
+
+.register input {
+  width: 100%;
+  margin-bottom: 10px;
+  color: black;
+}
+
+/* Login button and text color in login section */
+.login button {
+  margin-bottom: 10px;
+}
+
+.login p {
+  color: white;
+}
+
+/* Text color in register section */
+.register p {
+  color: white;
+}

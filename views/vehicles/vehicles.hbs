@@ -1,0 +1,37 @@
+<section id="vehicles" class="bg-dark text-white text-center py-5">
+    <h1 class="text-white">{{title}}</h1>
+    {{!-- add a link to ADD --}}
+    {{#if user}}
+    <a href="/vehicles/add"><button class="btn btn-primary">Add new Vehices</button></a>
+    {{/if}}
+    {{!-- show data in table --}}
+    {{!-- eah row will have action to delete/edit --}}
+    <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Vehicle</th>
+        <th>Model</th>
+        <th>Price</th>
+        {{#if user}}
+        <th>Action</th>
+        {{/if}}
+      </tr>
+    </thead>
+    <tbody>
+      {{#each dataset}}
+        <tr>
+          <td>{{this.vehicle}}</td>
+          <td>{{this.model}}</td>
+          <td>{{this.price}}</td>
+          {{#if ../user}}
+          <td>
+            <a href="/vehicles/edit/{{this._id}}"><i class="fas fa-pencil-alt"></i></a><b>/</b>
+            <a href="/vehicles/delete/{{this._id}}" onclick="return confirmDeletion()"><i class="fas fa-trash"></i></a>
+          </td>
+          {{/if}}
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
+</section>
